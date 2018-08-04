@@ -2,11 +2,13 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_one_page_checkout'
-  s.version     = '3.0.0'
+  #s.version     = '3.0.0'
+  s.version     = '3.2.0'
   s.summary     = 'One page checkout with Spree'
   s.description = 'Implement one page checkout with Spree. The goal here is to build a solution which is clean and elegant, especially taking into account the ability of the app to be easily updated when new version of Spree comes out.'
-  s.required_ruby_version = '>= 1.9.3'
-
+  #s.required_ruby_version = '>= 1.9.3'
+  s.required_ruby_version = '>= 2.1.0'
+  
   s.author    = 'Marcelo Espina'
   s.email     = 'mespina.icc@gmail.com'
   # s.homepage  = 'http://www.spreecommerce.com'
@@ -16,8 +18,9 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 3.0.0'
-
+  #s.add_dependency 'spree_core', '~> 3.0.0'
+  s.add_dependency 'spree_core', '~> 3.2.0.rc2'
+  
   s.add_development_dependency 'capybara', '~> 2.1'
   s.add_development_dependency 'coffee-rails'
   s.add_development_dependency 'database_cleaner'
