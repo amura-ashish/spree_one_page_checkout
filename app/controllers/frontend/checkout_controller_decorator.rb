@@ -1,7 +1,8 @@
 module Spree
   CheckoutController.class_eval do
-    before_filter :check_logged_in_user, :only => [:registration, :update_registration]
-
+#     before_filter :check_logged_in_user, :only => [:registration, :update_registration]
+    before_action :check_logged_in_user, :only => [:registration, :update_registration]
+    
     private
       def check_logged_in_user
         # Skip the login step if user already logged in
